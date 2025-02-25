@@ -1,0 +1,71 @@
+Detail dan Spesifikasi
+1. Struktur Halaman
+Halaman Utama (Home):
+Tampilkan nama Anda dalam teks besar dengan font modern.
+Sertakan foto profil dengan efek 3D (misalnya, foto yang tampak seperti model 3D yang bisa diputar).
+Tambahkan deskripsi singkat tentang diri Anda (1-2 kalimat) di bawah nama.
+Tentang Saya (About Me):
+Informasi detail tentang latar belakang, pendidikan, dan pengalaman kerja atau keterampilan.
+Gunakan layout sederhana dengan efek glass morphism pada bagian konten.
+Portofolio:
+Galeri proyek yang menampilkan setidaknya 3-4 proyek dummy.
+Setiap proyek memiliki gambar, judul, deskripsi singkat, dan tautan (bisa ke URL dummy).
+Terapkan efek glass morphism pada kartu proyek.
+Kontak:
+Formulir kontak sederhana (nama, email, pesan) dengan validasi dasar.
+Sertakan ikon media sosial atau email dengan animasi hover.
+(Opsional) Blog:
+Jika waktu memungkinkan, tambahkan bagian blog dengan 2-3 postingan dummy.
+2. Desain dan Estetika
+Tema Warna:
+Gunakan palet minimalis seperti putih (#FFFFFF) sebagai dasar, abu-abu terang (#E0E0E0) untuk kontras, dan aksen biru muda (#A3BFFA) atau hijau pastel (#A3E4D7).
+Tipografi:
+Gunakan font modern seperti "Montserrat" untuk judul dan "Roboto" untuk teks biasa.
+Ukuran font: 16px untuk teks biasa, 24-36px untuk judul.
+Efek Glass Morphism:
+Terapkan pada elemen seperti navigasi, kartu proyek, atau latar belakang bagian tertentu.
+Gunakan CSS (backdrop-filter: blur(10px), background: rgba(255, 255, 255, 0.2), border: 1px solid rgba(255, 255, 255, 0.3)) untuk efek kaca.
+Elemen 3D:
+Tambahkan model 3D interaktif pada foto profil di halaman utama (misalnya, efek rotasi atau kedalaman).
+Jika memungkinkan, tambahkan elemen 3D sederhana seperti kubus atau bola yang bergerak di latar belakang.
+3. Fungsionalitas
+Responsif:
+Pastikan tampilan optimal di desktop (min-width: 1024px), tablet (768px), dan ponsel (max-width: 480px).
+Gunakan media queries CSS untuk menyesuaikan layout.
+Navigasi:
+Buat menu navigasi tetap (fixed) di atas dengan efek glass morphism.
+Gunakan menu hamburger untuk tampilan mobile.
+Animasi:
+Tambahkan animasi fade-in saat elemen muncul (gunakan CSS @keyframes atau library seperti AOS).
+Berikan transisi halus saat berpindah antar bagian.
+Interaktivitas:
+Elemen 3D harus interaktif (misalnya, bisa diputar dengan mouse menggunakan Three.js).
+4. Teknologi yang Digunakan
+HTML5 dan CSS3:
+Struktur semantik (gunakan <header>, <section>, <footer>, dll.).
+Styling dengan CSS Grid atau Flexbox untuk layout.
+JavaScript:
+Tambahkan interaktivitas seperti animasi scroll atau validasi formulir.
+Framework CSS:
+Gunakan Tailwind CSS untuk mempercepat styling (opsional: Bootstrap).
+Library 3D:
+Gunakan Three.js untuk elemen 3D (contoh: model foto profil atau dekorasi latar belakang).
+Efek Glass Morphism:
+Implementasikan dengan CSS (backdrop-filter) dan sesuaikan opacity.
+5. Konten
+Foto Profil:
+Gunakan gambar placeholder berkualitas tinggi (misalnya dari Unsplash) dengan efek 3D.
+Proyek:
+Contoh data dummy:
+Proyek 1: "Website E-Commerce" - "Dibuat dengan React dan Tailwind" - Link: "#".
+Proyek 2: "Aplikasi Mobile" - "Dibuat dengan Flutter" - Link: "#".
+Proyek 3: "Desain UI/UX" - "Dibuat dengan Figma" - Link: "#".
+Formulir Kontak:
+Field: Nama, Email, Pesan. Tambahkan tombol "Kirim" dengan hover effect.
+6. Optimalisasi
+Kecepatan Muat:
+Kompres gambar (gunakan format WebP jika memungkinkan).
+Lazy load gambar di bagian portofolio.
+SEO:
+Tambahkan meta tags (<meta name="description" content="Portofolio [Nama Anda] - Desainer dan Pengembang">).
+Gunakan heading dengan hierarki yang baik (H1 untuk judul utama, H2 untuk subjudul).
