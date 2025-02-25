@@ -125,9 +125,15 @@ h1, h2, h3 {
 }
 
 .about, .portfolio, .contact {
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .projects {
@@ -162,17 +168,39 @@ h1, h2, h3 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: 600px;
   margin: 0 auto;
+  padding: 2.5rem;
 }
 
 input, textarea {
-  padding: 1rem;
+  padding: 1.2rem;
   border: 1px solid var(--glass-border);
-  border-radius: 5px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   color: var(--text-color);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+form .btn {
+  margin-top: 1rem;
+  align-self: flex-start;
+  font-size: 1rem;
+  font-weight: 500;
+  background: var(--accent-color);
 }
 
 .skills {
