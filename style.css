@@ -1,10 +1,13 @@
 
 :root {
   --primary-color: #A3BFFA;
+  --secondary-color: #9F7AEA;
+  --accent-color: #F687B3;
   --text-color: #2D3748;
   --bg-color: #F7FAFC;
-  --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 * {
@@ -15,9 +18,17 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #F7FAFC, #EDF2F7);
+  background: linear-gradient(45deg, #F7FAFC, #E9D5FF, #FECDD3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: var(--text-color);
   line-height: 1.6;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 h1, h2, h3 {
@@ -27,9 +38,10 @@ h1, h2, h3 {
 .glass-nav {
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(10px);
-  background: var(--glass-bg);
+  backdrop-filter: blur(16px) saturate(180%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
   border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
   z-index: 1000;
 }
 
@@ -50,12 +62,24 @@ h1, h2, h3 {
 }
 
 .glass-card {
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid var(--glass-border);
   border-radius: 15px;
   padding: 2rem;
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.4);
+  border-color: var(--accent-color);
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+  text-shadow: 0 0 8px rgba(246, 135, 179, 0.5);
 }
 
 .glass-card:hover {
