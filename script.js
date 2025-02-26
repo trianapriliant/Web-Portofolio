@@ -49,5 +49,10 @@ menuBtn?.addEventListener('click', () => {
   navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });
 
+// Card expansion functionality
+document.querySelector('.expandable-card')?.addEventListener('click', function() {
+  this.classList.toggle('expanded');
+});
+
 // Initialize 3D effects when the page loads
 window.addEventListener('load', initProfile3D);
